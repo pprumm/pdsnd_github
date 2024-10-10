@@ -192,7 +192,7 @@ def trip_duration_stats(df):
 
     count_travel = df['Trip Duration'].count()
     
-    # display total travel time [hours]
+    # display total travel time [hours, minutes, seconds]
     total_travel = df['Trip Duration'].sum()
     total_travel_min,total_travel_sec = divmod(total_travel,60)
     total_travel_hr,total_travel_min = divmod(total_travel_min,60)
